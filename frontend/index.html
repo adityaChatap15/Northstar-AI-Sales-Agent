@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northstar Homes - AI Sales Assistant</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>Northstar Homes</h1>
+        <p>AI Sales Assistant &middot; Northstar One, Sector 79, Gurugram</p>
+      </div>
+      <div class="header-actions">
+        <button id="new-chat-btn" class="btn btn-secondary">New Conversation</button>
+        <button id="analytics-btn" class="btn btn-secondary">End Chat &amp; View Analytics</button>
+      </div>
+    </header>
+
+    <main id="chat-window" class="chat-window">
+      <div class="bubble bubble-assistant">
+        Hi! I'm the Northstar Homes AI assistant. Ask me anything about
+        Northstar One in Sector 79, Gurugram &mdash; in English, Hindi, or
+        Hinglish.
+      </div>
+    </main>
+
+    <form id="chat-form" class="input-row">
+      <input
+        id="message-input"
+        type="text"
+        placeholder="Type your message..."
+        autocomplete="off"
+      >
+      <button id="send-btn" class="btn btn-primary" type="submit">Send</button>
+    </form>
+  </div>
+
+  <div id="analytics-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Conversation Analytics</h2>
+      <pre id="analytics-body">Loading...</pre>
+      <button id="close-analytics-btn" class="btn btn-primary">Close</button>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
